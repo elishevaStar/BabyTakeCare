@@ -1,0 +1,727 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9CC202D5-841A-4FEF-B21E-EFEA33495C82}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BabyTakeCare</RootNamespace>
+    <AssemblyName>BabyTakeCare</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\Appointment.cs" />
+    <Compile Include="BLL\AppointmentDB.cs" />
+    <Compile Include="BLL\Baby.cs" />
+    <Compile Include="BLL\BabyDB.cs" />
+    <Compile Include="BLL\BabyDevelopment.cs" />
+    <Compile Include="BLL\BabyDevelopmentDB.cs" />
+    <Compile Include="BLL\BabyImmunisation.cs" />
+    <Compile Include="BLL\BabyImmunisationDB.cs" />
+    <Compile Include="BLL\BabySensitive.cs" />
+    <Compile Include="BLL\BabySensitiveDB.cs" />
+    <Compile Include="BLL\Branch.cs" />
+    <Compile Include="BLL\BranchDB.cs" />
+    <Compile Include="BLL\City.cs" />
+    <Compile Include="BLL\CityDB.cs" />
+    <Compile Include="BLL\Development.cs" />
+    <Compile Include="BLL\DevelopmentDB.cs" />
+    <Compile Include="BLL\DevelopmentSteps.cs" />
+    <Compile Include="BLL\DevelopmentStepsDB.cs" />
+    <Compile Include="BLL\DisAppointment.cs" />
+    <Compile Include="BLL\DisAppointmentDB.cs" />
+    <Compile Include="BLL\DisDevelopment.cs" />
+    <Compile Include="BLL\DisDevelopmentDB.cs" />
+    <Compile Include="BLL\Freqenty.cs" />
+    <Compile Include="BLL\FreqentyDB.cs" />
+    <Compile Include="BLL\Immunisation.cs" />
+    <Compile Include="BLL\ImmunisationDB.cs" />
+    <Compile Include="BLL\ImmunisationSideEffect.cs" />
+    <Compile Include="BLL\ImmunisationSideEffectDB.cs" />
+    <Compile Include="BLL\ImmunisationTime.cs" />
+    <Compile Include="BLL\ImmunisationTimeDB.cs" />
+    <Compile Include="BLL\National.cs" />
+    <Compile Include="BLL\NationalDb.cs" />
+    <Compile Include="BLL\Notes.cs" />
+    <Compile Include="BLL\NotesDB.cs" />
+    <Compile Include="BLL\Sensitive.cs" />
+    <Compile Include="BLL\SensitiveDB.cs" />
+    <Compile Include="BLL\SensitiveLevel.cs" />
+    <Compile Include="BLL\SensitiveLevelDB.cs" />
+    <Compile Include="BLL\SideEffect.cs" />
+    <Compile Include="GUI\AboutUs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\AboutUs.Designer.cs">
+      <DependentUpon>AboutUs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\BabyBeg.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\BabyBeg.Designer.cs">
+      <DependentUpon>BabyBeg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\DevelopInVisitD.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\DevelopInVisitD.Designer.cs">
+      <DependentUpon>DevelopInVisitD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\DevelopmentBeg.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\DevelopmentBeg.Designer.cs">
+      <DependentUpon>DevelopmentBeg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\DevelopmentSteps.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\DevelopmentSteps.Designer.cs">
+      <DependentUpon>DevelopmentSteps.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\EndOfVisit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\EndOfVisit.Designer.cs">
+      <DependentUpon>EndOfVisit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GiveImmPortion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\GiveImmPortion.Designer.cs">
+      <DependentUpon>GiveImmPortion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ImmunistationAge.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GUI\ImmunistationAge.Designer.cs">
+      <DependentUpon>ImmunistationAge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ImmunistationName.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GUI\ImmunistationName.Designer.cs">
+      <DependentUpon>ImmunistationName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ImmunistationNote.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ImmunistationNote.Designer.cs">
+      <DependentUpon>ImmunistationNote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ImmunistationPortions.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GUI\ImmunistationPortions.Designer.cs">
+      <DependentUpon>ImmunistationPortions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Monthes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Monthes.Designer.cs">
+      <DependentUpon>Monthes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Sensitive.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Sensitive.Designer.cs">
+      <DependentUpon>Sensitive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\SensitiveDeatils.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\SensitiveDeatils.Designer.cs">
+      <DependentUpon>SensitiveDeatils.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\SideEffectChose.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\SideEffectChose.Designer.cs">
+      <DependentUpon>SideEffectChose.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BLL\SideEffectDB.cs" />
+    <Compile Include="BLL\Subject.cs" />
+    <Compile Include="BLL\SubjectDB.cs" />
+    <Compile Include="BLL\Validation.cs" />
+    <Compile Include="BLL\VisitSummary.cs" />
+    <Compile Include="BLL\VisitSummaryDB.cs" />
+    <Compile Include="BLL\Worker.cs" />
+    <Compile Include="BLL\WorkerDB.cs" />
+    <Compile Include="DAL\Dal.cs" />
+    <Compile Include="DB\GeneralDB.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\BabyDeatils.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\BabyDeatils.Designer.cs">
+      <DependentUpon>BabyDeatils.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\BabyHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\BabyHome.Designer.cs">
+      <DependentUpon>BabyHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\BranchDeatils.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\BranchDeatils.Designer.cs">
+      <DependentUpon>BranchDeatils.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\DevelopmentDeatils.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\DevelopmentDeatils.Designer.cs">
+      <DependentUpon>DevelopmentDeatils.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\EnterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\EnterForm.Designer.cs">
+      <DependentUpon>EnterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ImmunistationDeatils.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ImmunistationDeatils.Designer.cs">
+      <DependentUpon>ImmunistationDeatils.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ManagerHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ManagerHome.Designer.cs">
+      <DependentUpon>ManagerHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\NewBaby.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\NewBaby.Designer.cs">
+      <DependentUpon>NewBaby.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\NewBabyM.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\NewBabyM.Designer.cs">
+      <DependentUpon>NewBabyM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\NewBranchM.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\NewBranchM.Designer.cs">
+      <DependentUpon>NewBranchM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\NewCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\NewCustomer.Designer.cs">
+      <DependentUpon>NewCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\NewDevelopmentM.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\NewDevelopmentM.Designer.cs">
+      <DependentUpon>NewDevelopmentM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\NewDisDevelopment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\NewDisDevelopment.Designer.cs">
+      <DependentUpon>NewDisDevelopment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\NewImm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\NewImm.Designer.cs">
+      <DependentUpon>NewImm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\NewWorkerM.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\NewWorkerM.Designer.cs">
+      <DependentUpon>NewWorkerM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\PortionDeatils.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\PortionDeatils.Designer.cs">
+      <DependentUpon>PortionDeatils.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Portions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Portions.Designer.cs">
+      <DependentUpon>Portions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\SideEffEctDeatils.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\SideEffEctDeatils.Designer.cs">
+      <DependentUpon>SideEffEctDeatils.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Until12Month.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Until12Month.Designer.cs">
+      <DependentUpon>Until12Month.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Until36Month.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Until36Month.Designer.cs">
+      <DependentUpon>Until36Month.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\VisitDevelop.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\VisitDevelop.Designer.cs">
+      <DependentUpon>VisitDevelop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\WorkerDeatils.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\WorkerDeatils.Designer.cs">
+      <DependentUpon>WorkerDeatils.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\WorkerHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\WorkerHome.Designer.cs">
+      <DependentUpon>WorkerHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI\AboutUs.resx">
+      <DependentUpon>AboutUs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\BabyBeg.resx">
+      <DependentUpon>BabyBeg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\DevelopInVisitD.resx">
+      <DependentUpon>DevelopInVisitD.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\DevelopmentBeg.resx">
+      <DependentUpon>DevelopmentBeg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\DevelopmentSteps.resx">
+      <DependentUpon>DevelopmentSteps.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\EndOfVisit.resx">
+      <DependentUpon>EndOfVisit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GiveImmPortion.resx">
+      <DependentUpon>GiveImmPortion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ImmunistationAge.resx">
+      <DependentUpon>ImmunistationAge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ImmunistationName.resx">
+      <DependentUpon>ImmunistationName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ImmunistationNote.resx">
+      <DependentUpon>ImmunistationNote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ImmunistationPortions.resx">
+      <DependentUpon>ImmunistationPortions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Monthes.resx">
+      <DependentUpon>Monthes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Sensitive.resx">
+      <DependentUpon>Sensitive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\SensitiveDeatils.resx">
+      <DependentUpon>SensitiveDeatils.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\SideEffectChose.resx">
+      <DependentUpon>SideEffectChose.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\BabyDeatils.resx">
+      <DependentUpon>BabyDeatils.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\BabyHome.resx">
+      <DependentUpon>BabyHome.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\BranchDeatils.resx">
+      <DependentUpon>BranchDeatils.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\DevelopmentDeatils.resx">
+      <DependentUpon>DevelopmentDeatils.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\EnterForm.resx">
+      <DependentUpon>EnterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ImmunistationDeatils.resx">
+      <DependentUpon>ImmunistationDeatils.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ManagerHome.resx">
+      <DependentUpon>ManagerHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\NewBaby.resx">
+      <DependentUpon>NewBaby.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\NewBabyM.resx">
+      <DependentUpon>NewBabyM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\NewBranchM.resx">
+      <DependentUpon>NewBranchM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\NewCustomer.resx">
+      <DependentUpon>NewCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\NewDevelopmentM.resx">
+      <DependentUpon>NewDevelopmentM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\NewDisDevelopment.resx">
+      <DependentUpon>NewDisDevelopment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\NewImm.resx">
+      <DependentUpon>NewImm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\NewWorkerM.resx">
+      <DependentUpon>NewWorkerM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\PortionDeatils.resx">
+      <DependentUpon>PortionDeatils.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Portions.resx">
+      <DependentUpon>Portions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\SideEffEctDeatils.resx">
+      <DependentUpon>SideEffEctDeatils.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Until12Month.resx">
+      <DependentUpon>Until12Month.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Until36Month.resx">
+      <DependentUpon>Until36Month.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\VisitDevelop.resx">
+      <DependentUpon>VisitDevelop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\WorkerDeatils.resx">
+      <DependentUpon>WorkerDeatils.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\WorkerHome.resx">
+      <DependentUpon>WorkerHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\רקעים3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\רקעים31.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\רקע 3 חדש.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\כפתור ברקע שקוף.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\כפתור.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\כפתור מחודש.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\כפתור מחודש צבוע.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\רקעים32.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\תמונת מסך.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\תמונה סופית.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\כוכב לדף.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\תמונת מנהל.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\מנהל סופי.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\מנהל סוף סוף.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\הכי הכי מנהל.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\חיפוש.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\מנהל אולי.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\סיסמא.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\חיפוש כחול.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\מעקב.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\מעקב סופי.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\חודש.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\חודשיים.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3 חודשים.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4 חודשים.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5 חודשים.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6 חודשים.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7 חודשים.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8 חודשים.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9 חודשים.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10 חודשים.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11 חודשים.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12 חודשים.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13-15 חודשים.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16-18 חודשים.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\19-21 חודשים.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\21-23 חודשים.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\21-23 חודשים1.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\21-23 חודשים2.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\22-24 חודשים.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\22-24 חודשים1.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\25-27 חודשים.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\28-30 חודשים.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\31-33 חודשים.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\34-36 חודשים.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\קטר.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\תנועתיות ומוטוריקה.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\תזונה.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\שינה.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\חושים.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\שפה ותקשורת.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\תנועתיות ומוטוריקה1.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\חושים1.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\תינוקת1.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\תינוק2.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\תינוק3.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\תינוק4.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\תינוק5.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\תינוק7.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\תינוק12.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\תינוק6.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\תינוקת13.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\תינוקת16.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\תינוקת31.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\תינוקת28.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\תינוקת34.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\תינוקת10.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\תינוקת11.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\תינוק19.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\תינוק22.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\תינוק25.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\תינוק25א.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\תינוק9.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\תינוק8.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\אחורה.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\אחורה סופי.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\פנקס החיסונים שלי.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\פנקס החיסונים שלי-חדש.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\רקע חיסונים.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\חזרה לאחור1.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\חץ.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_18581.JPG" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

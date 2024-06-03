@@ -1,0 +1,370 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="חיפוש" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\חיפוש.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="אחורה סופי" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\אחורה סופי.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="פנקס החיסונים שלי" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\פנקס החיסונים שלי.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="תינוקת10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\תינוקת10.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="שינה" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\שינה.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="25-27 חודשים" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\25-27 חודשים.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="21-23 חודשים" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\21-23 חודשים.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="21-23 חודשים2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\21-23 חודשים2.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="תינוק6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\תינוק6.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="הכי הכי מנהל" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\הכי הכי מנהל.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="תמונת מסך" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\תמונת מסך.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="רקע חיסונים" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\רקע חיסונים.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="כפתור מחודש" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\כפתור מחודש.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="מעקב" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\מעקב.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="תינוק25א" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\תינוק25א.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="תינוקת31" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\תינוקת31.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="21-23 חודשים1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\21-23 חודשים1.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="22-24 חודשים" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\22-24 חודשים.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="תינוק9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\תינוק9.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="תנועתיות ומוטוריקה1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\תנועתיות ומוטוריקה1.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="תינוק3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\תינוק3.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="תינוק22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\תינוק22.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="11 חודשים" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\11 חודשים.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="מנהל סוף סוף" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\מנהל סוף סוף.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="תינוקת11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\תינוקת11.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="כוכב לדף" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\כוכב לדף.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="קטר" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\קטר.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="תינוקת1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\תינוקת1.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="תינוק12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\תינוק12.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="תינוק7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\תינוק7.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="13-15 חודשים" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\13-15 חודשים.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="תינוק8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\תינוק8.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="חודשיים" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\חודשיים.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="כפתור מחודש צבוע" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\כפתור מחודש צבוע.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="כפתור" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\כפתור.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="31-33 חודשים" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\31-33 חודשים.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="9 חודשים" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\9 חודשים.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="תינוקת28" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\תינוקת28.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="8 חודשים" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\8 חודשים.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="חושים" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\חושים.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="12 חודשים" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\12 חודשים.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="חץ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\חץ.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="רקע 3 חדש" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\רקע 3 חדש.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="תינוק5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\תינוק5.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="תנועתיות ומוטוריקה" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\תנועתיות ומוטוריקה.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Untitled-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Untitled-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="תמונה סופית" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\תמונה סופית.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4 חודשים" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4 חודשים.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="תינוקת16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\תינוקת16.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="16-18 חודשים" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\16-18 חודשים.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="28-30 חודשים" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\28-30 חודשים.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3 חודשים" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3 חודשים.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="תינוק25" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\תינוק25.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="19-21 חודשים" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\19-21 חודשים.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="מנהל אולי" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\מנהל אולי.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="שפה ותקשורת" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\שפה ותקשורת.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="סיסמא" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\סיסמא.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="מעקב סופי" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\מעקב סופי.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="רקעים3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\רקעים3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="אחורה" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\אחורה.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="תינוק2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\תינוק2.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="תינוקת34" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\תינוקת34.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="22-24 חודשים1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\22-24 חודשים1.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="6 חודשים" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\6 חודשים.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="תמונת מנהל" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\תמונת מנהל.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="רקעים32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\רקעים32.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="תינוק4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\תינוק4.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="תזונה" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\תזונה.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="כפתור ברקע שקוף" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\כפתור ברקע שקוף.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="7 חודשים" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\7 חודשים.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="5 חודשים" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5 חודשים.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="תינוק19" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\תינוק19.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="חושים1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\חושים1.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="חזרה לאחור" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\חזרה לאחור1.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="34-36 חודשים" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\34-36 חודשים.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="מנהל סופי" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\מנהל סופי.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="רקעים31" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\רקעים31.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="חודש" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\חודש.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="פנקס החיסונים שלי-חדש" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\פנקס החיסונים שלי-חדש.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="חיפוש כחול" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\חיפוש כחול.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="תינוקת13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\תינוקת13.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="10 חודשים" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\10 חודשים.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IMG_1858" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IMG_18581.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

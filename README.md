@@ -1,3 +1,4 @@
+פרויקט גמר טיפת חלב winforms+accesss          ![image](https://github.com/elishevaStar/BabyTakeCare/assets/144705468/2cbc6b3b-e8fe-40b3-ad81-9e4ba0a4ee82)
 
 
 מערכת BabyTakeCare תוכננה ועצבה כדי לספק הן לעובדי טיפת החלב והן למטופלים בה שירות ברמה הגבוה ביותר.
